@@ -8,14 +8,8 @@ def index(request):
 	return HttpResponse(template.render(context,request))
 
 def registration(request):
-	template = loader.get_template('index.html')
+	template = loader.get_template('registro.html')
 	context = {}
 	return HttpResponse(template.render(context,request))
 
-def logout(request):
-	template = loader.get_template('index.html')
-	context = {}
-	return HttpResponse(template.render(context,request))
 # Create your views here.
-
-
